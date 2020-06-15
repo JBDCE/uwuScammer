@@ -1,1 +1,4 @@
 bin/*
+BuildJar.bat
+manifest.mf
+.vscode/settings.json
