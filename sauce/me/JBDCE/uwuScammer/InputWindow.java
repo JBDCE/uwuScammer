@@ -1,13 +1,21 @@
 package sauce.me.JBDCE.uwuScammer;
 
-import javax.swing.*;
-import javax.swing.GroupLayout.Alignment;
-
 import java.awt.BorderLayout;
-import java.awt.Component;
 import java.awt.Dimension;
-import java.awt.GridLayout;
-import java.awt.image.*;
+import java.awt.Font;
+import java.awt.image.BufferedImage;
+
+import javax.swing.BoxLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSeparator;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 
 public class InputWindow extends JFrame {
     private JPanel alluringImagePanel = new JPanel();
@@ -47,8 +55,10 @@ public class InputWindow extends JFrame {
         alluringText.setAlignmentX(CENTER_ALIGNMENT);
         alluringText.setEditable(false);
         alluringText.setBackground(this.getBackground());
-        alluringText.setFont(alluringText.getFont().deriveFont(18.0f));
+        alluringText.setFont(alluringText.getFont().deriveFont(Font.BOLD, 20.0f));
         alluringText.setMinimumSize(new Dimension(100, 10));
+        alluringText.setLineWrap(true);
+        alluringText.setWrapStyleWord(true);
 
         inputOptionsPanel.add(creditCardNumberPanel);
         creditCardNumberPanel.add(creditCardNumberLabel, BorderLayout.WEST);
