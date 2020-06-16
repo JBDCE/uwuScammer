@@ -1,4 +1,4 @@
-package src.me.JBDCE.uwuScammer;
+package sauce.me.JBDCE.uwuScammer;
 
 import javax.swing.*;
 import java.awt.BorderLayout;
